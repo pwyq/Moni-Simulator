@@ -3,6 +3,9 @@ on:
   push:
     path:
       - 'src/libs/**'
+    paths-ignore:
+      - 'assets/**'
+      - '.github/**'
 
 jobs:
   update-lib:
