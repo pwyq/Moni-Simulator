@@ -1,12 +1,8 @@
 name: update-bobatron-lib
 on:
   push:
-    path:
+    paths:
       - 'src/libs/**'
-    paths-ignore:
-      - 'assets/**'
-      - '.github/**'
-      - 'README.md'
 
 jobs:
   update-lib:
