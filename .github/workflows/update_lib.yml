@@ -1,0 +1,15 @@
+name: update-bobatron-lib
+on:
+  push:
+    path:
+      - src/libs
+
+jobs:
+  update-lib:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout current repo
+        uses: actions/checkout@v2
+      - name: test
+        run: |
+          echo "You should only see this if you modified sth inside src/libs"
