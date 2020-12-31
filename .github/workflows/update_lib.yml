@@ -2,7 +2,7 @@ name: update-bobatron-lib
 on:
   push:
     path:
-      - src/libs
+      - 'src/libs/**'
 
 jobs:
   update-lib:
